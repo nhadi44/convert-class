@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="show-data" id="show-data">
+        
+      </section>
+      <section class="input-form">
+        <form action="" id="form">
+          <div class="form-input">
+            <h3 class="text-md">Input Form</h3>
+            <div class="input-data">
+              <label for="input-name" class="label-sm">Name</label>
+              <input
+                type="text"
+                id="input-name"
+                class="input-sm"
+                placeholder="Input your name"
+              />
+            </div>
+            <div class="input-data">
+              <label for="input-summary" class="label-sm">Summary</label>
+              <input
+                type="text"
+                id="input-summary"
+                class="input-sm"
+                placeholder="Input your summary"
+              />
+            </div>
+            <div class="input-data">
+              <label for="input-number" class="label-sm">Number</label>
+              <input
+                type="number"
+                id="input-number"
+                class="input-sm"
+                placeholder="Input your number"
+              />
+            </div>
+            <div class="input-data">
+              <label for="input-email" class="label-sm">Email</label>
+              <input
+                type="email"
+                id="input-email"
+                class="input-sm"
+                placeholder="Input your email"
+              />
+            </div>
+            <div class="input-data">
+              <label for="input-dob" class="label-sm">Date of Bird</label>
+              <input
+                type="date"
+                id="input-dob"
+                class="input-sm"
+                placeholder="Input your date of bird"
+              />
+            </div>
+            <div class="input-data">
+              <label class="label-sm">Gender</label>
+              <br />
+              <input
+                type="radio"
+                id="gender-male"
+                value="Male"
+                class="radio-sm"
+              />Male
+              <input
+                type="radio"
+                id="gender-female"
+                value="Female"
+                class="radio-sm"
+              />Female
+            </div>
+            <div class="input-data">
+              <label for="input-education" class="label-sm">Education</label>
+              <select
+                name="input-education"
+                id="input-education"
+                class="input-sm"
+              >
+                <option value="" selected>Choose your education</option>
+                <option value="SD">SD</option>
+                <option value="SMP">SMP</option>
+                <option value="SMA">SMA</option>
+                <option value="S1">S1</option>
+              </select>
+            </div>
+            <div class="input-data">
+              <label for="input-address" class="label-sm">Address</label>
+              <textarea
+                class="input-sm"
+                name="input-address"
+                id="input-address"
+                cols="3"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="input-data">
+              <button class="btn-submit" type="button" onclick="addUser()">
+                Submit
+              </button>
+              <!-- <input
+                type="submit"
+                class="btn-submit"
+                onclick="event.preventDefault(); handleInputForm()"
+              /> -->
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
